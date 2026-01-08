@@ -1,0 +1,59 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2d2e30;
+    color: white;
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#partsList {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: #000000;
+    margin-bottom: 0;
+}
+
+.partsList {
+    color: #ffffff;
+    width: 25%;
+    margin: auto;
+    padding: 4px;
+    text-align: center;
+}
+
+#mainSpace {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    height: 55vh;
+    background-color: #000000;
+}
+
+#mainContent {
+
+    background-color: #c2c2c2;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#asideContent {
+    background-color: #8c8c8c;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    height: 30vh;
+    padding: 10px;
+    text-align: center;
+}
