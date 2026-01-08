@@ -12,6 +12,10 @@ header {
     flex-direction: column;
 }
 
+header h2 {
+    padding-left: 5px;
+}
+
 #partsList {
     display: flex;
     flex-direction: row;
