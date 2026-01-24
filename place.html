@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Country page">
+    <meta name="author" content="Daniel Arcos">
+    <link rel="stylesheet" href="week03/styles/place.css">
+    <link rel="stylesheet" href="week03/styles/placeLarge.css">
+    <script src="week03/scripts/place.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Isla de Chiloe
+        </h1>
+    </header>
+    <main>
+        <picture class="chiloe-container">
+            <source srcset="week03/images/chiloeImgLarge.webp" media="(min-width: 770px)">
+            <img src="week03/images/chiloeImgcasas.webp" alt="Paisaje de Chiloe" class="chiloe-picture">
+        </picture>
+        <section class="data-card">
+            <h2>Isla de Chiloe</h2>
+            <ul>
+                <li><span class="label">Area:</span> <span class="value">8,394 sq km</span></li>
+                <li><span class="label">Population:</span> <span class="value">168,000</span></li>
+                <li><span class="label">Capital:</span> <span class="value">Castro</span></li>
+                <li><span class="label">Languages:</span> <span class="value">Spanish</span></li>
+                <li><span class="label">Currency:</span> <span class="value">Chilean Peso</span></li>
+                <li><span class="label">Time Zone:</span> <span class="value">UTC-4 (CLT)</span></li>
+                <li><span class="label">Calling Code:</span> <span class="value">+56 65</span></li>
+                <li><span class="label">Internet TLD:</span> <span class="value">.cl</span></li>
+            </ul>
+        </section>
+        <section class="weather-card">
+            <h2>Weather</h2>
+            <div>
+                <img src="week03/images/partlyCloudy.png" alt="Sunny with clouds" id="weather-img">
+            </div>
+            <ul>
+                <li><span class="label">Temperature:</span> <span class="value" id="temp">8 °C</span></li>
+                <li><span class="label">Conditions:</span> <span class="value">Partly Cloudy</span></li>
+                <li><span class="label">Wind:</span> <span class="value" id="wind-speed">5 km/h</span></li>
+                <li><span class="label">Wind Chill:</span> <span id="wind-chill" class="value">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="current-year"></span> Daniel Arcos - CHILE</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+
+</html>

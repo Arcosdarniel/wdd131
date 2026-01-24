@@ -1,0 +1,55 @@
+@media (min-width: 770px) {
+    .weather-card h2::after {
+        content: " ☁️";
+    }
+
+    .data-card,
+    .weather-card {
+        width: 30%;
+    }
+
+    main {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+
+    .chiloe-picture {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .data-card,
+    .weather-card {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 15px;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+    }
+
+    .data-card {
+        top: 20px;
+        left: 20px;
+        width: 250px;
+    }
+
+    .weather-card {
+        bottom: 20px;
+        right: 20px;
+        width: 200px;
+    }
+
+    #weather-img {
+        margin-left: 50px;
+    }
+
+    footer {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
