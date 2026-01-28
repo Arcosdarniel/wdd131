@@ -1,0 +1,39 @@
+@keyframes fadeInFromBlack {
+    0% {
+        opacity: 0;
+        filter: brightness(0);
+    }
+
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+.lazy {
+    width: 400px;
+    height: 600px;
+    animation-name: fadeInFromBlack;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+#lazyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
