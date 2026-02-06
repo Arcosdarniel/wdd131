@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #ee5725;
+    --accent-color: #000000;
+    --border-box: rgb(116, 112, 112)0;
+}
+
+body {
+    width: 30%;
+    margin: auto;
+}
+
+header {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px 10px 0 0;
+}
+
+form {
+    border: 3px solid var(--secondary-color);
+    border-radius: 0 0 5px 5px;
+    padding: 5px;
+}
+
+#labelProductName {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+#productName {
+    width: 40%;
+    height: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: var(--accent-color);
+}
+
+#boxStar {
+    width: 80%;
+    margin-top: 15px;
+    margin-left: 17px;
+    text-align: center;
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+#boxStar legend {
+    text-align: left;
+
+}
+
+#boxStar label,
+input {
+    font-size: 15px;
+}
+
+#labelIntallDate {
+    font-size: 17px;
+    margin-left: 150px;
+}
+
+#installDate {
+    width: 40%;
+    height: 25px;
+    text-align: center;
+    font-size: 17px;
+    margin-left: 120px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#installDate::-webkit-datetime-edit-fields-wrapper {
+    background: transparent;
+}
+
+#installDate::-webkit-datetime-edit-day-field:focus,
+#installDate::-webkit-datetime-edit-month-field:focus,
+#installDate::-webkit-datetime-edit-year-field:focus {
+    background-color: transparent;
+    color: inherit;
+}
+
+#checkbox {
+    width: 80%;
+    font-size: 15px;
+    margin-left: 17px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--accent-color);
+}
+
+#checkbox :nth-child(2),
+#checkbox :nth-child(4) {
+    margin-left: 50px;
+}
+
+#labelReview {
+    font-size: 17px;
+    margin-left: 15px;
+}
+
+#review {
+    width: 84%;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-width: 2px;
+    border-color: var(--accent-color);
+}
+
+#labelUserName {
+    font-size: 17px;
+    margin-left: 15px;
+}
+
+#userName {
+    width: 50%;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    border-width: 2px;
+    border-color: var(--accent-color);
+    border-style: solid;
+}
+
+#btn {
+    width: 60%;
+    height: 40px;
+    margin-left: 20%;
+    background-color: var(--secondary-color);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border-style: none;
+}
