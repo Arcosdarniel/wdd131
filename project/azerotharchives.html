@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Daniel Arcos">
+    <meta name="description"
+        content="Azeroth Archives - I chose this name because the website will serve as a historical and technical library for players seeking knowledge about the world of Azeroth.">
+    <script src="scripts/azerotharchives.js" defer></script>
+    <link rel="stylesheet" href="styles/azerotharchives.css">
+    <title id="titlePage">Azeroth Archives</title>
+</head>
+
+<body>
+    <header>
+        <h3>Azeroth Archives</h3>
+        <nav>
+            <a href="#" id="btnHome"><span class="navItem">Home</span></a>
+            <a href="#" id="btnTierList"><span class="navItem">Tier list</span></a>
+            <a href="#" id="btnGuild"><span class="navItem">Guild</span></a>
+        </nav>
+    </header>
+    <main>
+        <div id="guildView" style="display:none;">
+            <div class="guildSearchBox">
+                <h2>Search a WoW Guild</h2>
+
+                <form id="guildSearchForm">
+                    <input type="text" id="guildName" placeholder="Guild name" required>
+                    <input type="text" id="realmName" placeholder="Realm" required>
+
+                    <select id="region">
+                        <option value="us">US</option>
+                        <option value="eu">EU</option>
+                        <option value="kr">KR</option>
+                        <option value="tw">TW</option>
+                    </select>
+
+                    <button type="submit">Search Guild</button>
+                </form>
+
+                <div id="guildResult"></div>
+            </div>
+        </div>
+
+        <section id="infoPage"></section>
+        <h2 id="titleBoxClass">All especialities</h2>
+
+        <div class="filters" id="filtersBar">
+            <button data-role="all" class="filterBtn active">All</button>
+            <button data-role="Tank" class="filterBtn">Tank</button>
+            <button data-role="DPS" class="filterBtn">DPS</button>
+            <button data-role="Healer" class="filterBtn">Healer</button>
+        </div>
+
+
+        <div id="boxClass"></div>
+
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> Daniel Arcos - CHILE</p>
+        <p id="lastModified"></p>
+        <a class="linkReferences" href="references.html" target="_blank" rel="noopener"><span>Page references</span></a>
+        <a class="linkReferences" href="https://www.wowhead.com/es" target="_blank" rel="noopener"><samp>Reference to
+                wowhead</samp></a>
+        <a class="linkReferences" href="https://worldofwarcraft.blizzard.com/es-es/midnight" target="_blank"
+            rel="noopener"><samp>Reference to
+                blizzard</samp></a>
+    </footer>
+</body>
+
+</html>
